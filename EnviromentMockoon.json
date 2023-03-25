@@ -1,0 +1,224 @@
+{
+    "uuid": "2f993040-6f35-4021-bade-188d3434c13c",
+    "lastMigration": 27,
+    "name": "DemoEglobal",
+    "endpointPrefix": "",
+    "latency": 0,
+    "port": 3000,
+    "hostname": "",
+    "folders": [],
+    "routes": [
+        {
+            "uuid": "eb6dc5fb-aa43-44a7-a255-5c6a43c2a15a",
+            "type": "http",
+            "documentation": "",
+            "method": "post",
+            "endpoint": "getLogin",
+            "responses": [
+                {
+                    "uuid": "25440272-80da-42fe-9639-64ee85aa0c4b",
+                    "body": "    {\n      \"success\": true,\n      \"token\": \"empty body\"\n    }",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true
+                },
+                {
+                    "uuid": "7354a142-ea55-4d3f-bea2-1821767a2683",
+                    "body": "{\n    \"success\": false,\n    \"statusCode\":\"401\"\n    \"statusMessage\": \"values nill or empty\"\n}",
+                    "latency": 0,
+                    "statusCode": 401,
+                    "label": " (copy)",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "body",
+                            "modifier": "user",
+                            "value": "",
+                            "invert": false,
+                            "operator": "null"
+                        },
+                        {
+                            "target": "body",
+                            "modifier": "password",
+                            "value": "",
+                            "invert": false,
+                            "operator": "null"
+                        },
+                        {
+                            "target": "body",
+                            "modifier": "user",
+                            "value": "",
+                            "invert": false,
+                            "operator": "equals"
+                        },
+                        {
+                            "target": "body",
+                            "modifier": "password",
+                            "value": "",
+                            "invert": false,
+                            "operator": "equals"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false
+                }
+            ],
+            "enabled": true,
+            "responseMode": null
+        },
+        {
+            "uuid": "ca13a6f3-7997-4778-ba38-b6d72ef37b5b",
+            "type": "http",
+            "documentation": "",
+            "method": "post",
+            "endpoint": "addUser",
+            "responses": [
+                {
+                    "uuid": "5ce64c11-aabf-4bd1-8f5d-45bfbee9c0f9",
+                    "body": "{\n  \"success\": true,\n  \"key\": \"9/Ynn57QdEM6ZfrfjRgivg==\",\n  \"firstName\": \"{{body 'firstName'}}\",\n  \"lastName\": \"{{body 'lastName'}}\",\n  \"age\": \"{{body 'age'}}\",\n}",
+                    "latency": 0,
+                    "statusCode": 200,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": true
+                },
+                {
+                    "uuid": "39889ced-eb4a-4aea-862f-a265a751936a",
+                    "body": "{\n    \"success\": false,\n    \"statusCode\":\"401\"\n    \"statusMessage\": \"values nill or empty\"\n}",
+                    "latency": 0,
+                    "statusCode": 400,
+                    "label": "",
+                    "headers": [],
+                    "bodyType": "INLINE",
+                    "filePath": "",
+                    "databucketID": "",
+                    "sendFileAsBody": false,
+                    "rules": [
+                        {
+                            "target": "body",
+                            "modifier": "age",
+                            "value": "",
+                            "invert": false,
+                            "operator": "equals"
+                        },
+                        {
+                            "target": "body",
+                            "modifier": "age",
+                            "value": "",
+                            "invert": false,
+                            "operator": "null"
+                        },
+                        {
+                            "target": "body",
+                            "modifier": "firstName",
+                            "value": "",
+                            "invert": false,
+                            "operator": "equals"
+                        },
+                        {
+                            "target": "body",
+                            "modifier": "firstName",
+                            "value": "",
+                            "invert": false,
+                            "operator": "null"
+                        },
+                        {
+                            "target": "body",
+                            "modifier": "lastName",
+                            "value": "",
+                            "invert": false,
+                            "operator": "equals"
+                        },
+                        {
+                            "target": "body",
+                            "modifier": "lastName",
+                            "value": "",
+                            "invert": false,
+                            "operator": "null"
+                        }
+                    ],
+                    "rulesOperator": "OR",
+                    "disableTemplating": false,
+                    "fallbackTo404": false,
+                    "default": false
+                }
+            ],
+            "enabled": true,
+            "responseMode": null
+        }
+    ],
+    "rootChildren": [
+        {
+            "type": "route",
+            "uuid": "eb6dc5fb-aa43-44a7-a255-5c6a43c2a15a"
+        },
+        {
+            "type": "route",
+            "uuid": "ca13a6f3-7997-4778-ba38-b6d72ef37b5b"
+        }
+    ],
+    "proxyMode": false,
+    "proxyHost": "",
+    "proxyRemovePrefix": false,
+    "tlsOptions": {
+        "enabled": false,
+        "type": "CERT",
+        "pfxPath": "",
+        "certPath": "",
+        "keyPath": "",
+        "caPath": "",
+        "passphrase": ""
+    },
+    "cors": true,
+    "headers": [
+        {
+            "key": "Content-Type",
+            "value": "application/json"
+        }
+    ],
+    "proxyReqHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "proxyResHeaders": [
+        {
+            "key": "",
+            "value": ""
+        }
+    ],
+    "data": [
+        {
+            "uuid": "54c3e572-1310-46a2-ab2e-d729bba49834",
+            "id": "580z",
+            "name": "Users",
+            "documentation": "",
+            "value": "[\n  {{#repeat 50}}\n  {\n    \"id\": \"{{faker 'datatype.uuid'}}\",\n    \"username\": \"{{faker 'internet.userName'}}\"\n  }\n  {{/repeat}}\n]"
+        }
+    ]
+}

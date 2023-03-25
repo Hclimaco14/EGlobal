@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="EglobalDemo">
+            <connections>
+                <outlet property="loginBtn" destination="Qr2-kA-VLn" id="x8v-Q4-yEm"/>
+                <outlet property="logoImgView" destination="rKK-ad-0L7" id="kwN-1K-3bX"/>
+                <outlet property="passwordTextF" destination="qjA-jE-AV7" id="Rhi-uR-mmW"/>
+                <outlet property="userTextF" destination="3G8-cV-r9X" id="5mq-nZ-GZ9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Xr1-pT-2bs">
+                    <rect key="frame" x="32" y="381" width="350" height="134.5"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3G8-cV-r9X">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjA-jE-AV7">
+                            <rect key="frame" x="0.0" y="50" width="350" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qr2-kA-VLn">
+                            <rect key="frame" x="0.0" y="100" width="350" height="34.5"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="oVR-8n-n9f"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-black" translatesAutoresizingMaskIntoConstraints="NO" id="rKK-ad-0L7">
+                    <rect key="frame" x="87" y="221" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rKK-ad-0L7" secondAttribute="height" multiplier="15:8" id="KtN-b0-nqr"/>
+                        <constraint firstAttribute="width" constant="240" id="rJd-8z-856"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xr1-pT-2bs" firstAttribute="top" secondItem="rKK-ad-0L7" secondAttribute="bottom" constant="32" id="34p-3m-28J"/>
+                <constraint firstItem="Xr1-pT-2bs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Jk4-B3-BAc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Xr1-pT-2bs" secondAttribute="trailing" constant="32" id="SoO-kV-f5V"/>
+                <constraint firstItem="rKK-ad-0L7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VRi-WM-YfS"/>
+                <constraint firstItem="Xr1-pT-2bs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XnX-RJ-nvy"/>
+            </constraints>
+            <point key="canvasLocation" x="-771" y="10"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-black" width="320" height="75"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

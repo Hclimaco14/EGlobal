@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "975161FD-FF17-422A-89FE-5E239E45AA88"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C10AD66F-AEEC-4C73-A72F-7082BE746865"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EglobalDemo/Modules/Login/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "loginAction(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A32C5CC6-DF85-43F4-8543-A966A308BFA6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EglobalDemo/Network/NetworkUtils.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "createRequest(urlStr:method:body:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A32C5CC6-DF85-43F4-8543-A966A308BFA6 - d4d45f8104e981eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EglobalDemo.NetworkUtils.createRequest(urlStr: Swift.String, method: EglobalDemo.HTTPMethod, body: Swift.Optional&lt;Swift.Decodable &amp; Swift.Encodable&gt;) -&gt; Swift.Optional&lt;Foundation.URLRequest&gt;"
+                  moduleName = "EglobalDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectorclimaco/GitHub/EglobalDemo/EglobalDemo/Network/NetworkUtils.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "428">
+               </Location>
+               <Location
+                  uuid = "A32C5CC6-DF85-43F4-8543-A966A308BFA6 - d4d45f8104e981eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EglobalDemo.NetworkUtils.createRequest(urlStr: Swift.String, method: EglobalDemo.HTTPMethod, body: Swift.Optional&lt;Swift.Decodable &amp; Swift.Encodable&gt;) -&gt; Swift.Optional&lt;Foundation.URLRequest&gt;"
+                  moduleName = "EglobalDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectorclimaco/GitHub/EglobalDemo/EglobalDemo/Network/NetworkUtils.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "536">
+               </Location>
+               <Location
+                  uuid = "A32C5CC6-DF85-43F4-8543-A966A308BFA6 - d4d45f8104e981eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static EglobalDemo.NetworkUtils.createRequest(urlStr: Swift.String, method: EglobalDemo.HTTPMethod, body: Swift.Optional&lt;Swift.Decodable &amp; Swift.Encodable&gt;) -&gt; Swift.Optional&lt;Foundation.URLRequest&gt;"
+                  moduleName = "EglobalDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectorclimaco/GitHub/EglobalDemo/EglobalDemo/Network/NetworkUtils.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "1344">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FCA38896-6220-481D-B493-7BEE71F70BE8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EglobalDemo/Modules/Login/LoginInteractor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "getLogin(user:password:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FCA38896-6220-481D-B493-7BEE71F70BE8 - 113606ab794d6120"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EglobalDemo.LoginInteractor.getLogin(user: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "EglobalDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectorclimaco/GitHub/EglobalDemo/EglobalDemo/Modules/Login/LoginInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "FCA38896-6220-481D-B493-7BEE71F70BE8 - adbbdc6d462b512c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;EglobalDemo.Login.Response, EglobalDemo.RequestError&gt;) -&gt; () in EglobalDemo.LoginInteractor.getLogin(user: Swift.Optional&lt;Swift.String&gt;, password: Swift.Optional&lt;Swift.String&gt;) -&gt; ()"
+                  moduleName = "EglobalDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hectorclimaco/GitHub/EglobalDemo/EglobalDemo/Modules/Login/LoginInteractor.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "64">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E4231DA-7C65-4541-A8B4-2FF4173B5F38"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EglobalDemo/Modules/Login/LoginWorker.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "getLoginRequest(login:result:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
